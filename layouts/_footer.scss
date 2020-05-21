@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-background-title;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    a {
+        color: $color-title;
+        background-color: $color-background-title;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}

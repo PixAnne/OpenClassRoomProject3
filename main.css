@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'CroissantOne';
+  src: url("base/croissant-one/CroissantOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Dancing';
+  src: url("base/Dansing-Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Devonchire';
+  src: url("base/Devonshire/Devonshire-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Kaushan';
+  src: url("base/KaushanScript-Regular.otf");
+}
+
 header h1 {
   color: #fdca50;
   background-color: #559c88;
@@ -10,6 +30,34 @@ header h1 {
 
 body {
   margin: 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #559c88;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+footer a {
+  color: #fdca50;
+  background-color: #559c88;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer button {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .haut {
@@ -64,33 +112,5 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #559c88;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-footer a {
-  color: #fdca50;
-  background-color: #559c88;
-  display: block;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-footer button {
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 /*# sourceMappingURL=main.css.map */

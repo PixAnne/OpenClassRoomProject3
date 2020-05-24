@@ -19,11 +19,16 @@
   src: url("base/kaushan-script/KaushanScript-Regular.otf");
 }
 
+header a {
+  text-decoration: none;
+}
+
 header h1 {
   color: #fdca50;
   background-color: #559c88;
   width: 100%;
   text-align: center;
+  font-size: 40px;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -134,7 +139,7 @@ footer button {
   text-decoration: none;
 }
 
-.menus h2 + h3 {
+.menus h2, .menus h3 {
   text-align: center;
 }
 
@@ -158,8 +163,71 @@ footer button {
   text-align: center;
 }
 
+.mentions_legales {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+
+.mentions_legales h1 {
+  text-align: center;
+  color: #559c88;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.mentions_legales h2 {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  color: #559c88;
+  margin-bottom: 50px;
+}
+
+.mentions_legales h3 {
+  font-size: 20px;
+}
+
+.mentions_legales .article {
+  color: #fdca50;
+}
+
+.mentions_legales .intro {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
 .la_note_enchantée {
   font-family: 'Devonshire';
+  text-align: center;
+  border: 1px solid #fcdfdb;
+  -webkit-box-shadow: 1px 1px 2px #fcdfdb;
+          box-shadow: 1px 1px 2px #fcdfdb;
+  margin: 80px;
+  background-color: #fcdfdb;
+}
+
+.la_note_enchantée h2 {
+  font-size: 40px;
+}
+
+.la_note_enchantée h3 {
+  font-size: 30px;
+}
+
+.la_note_enchantée table {
+  font-size: 20px;
+  text-align: center;
 }
 
 .la_palette_du_gout {

@@ -14,7 +14,7 @@
 }
 .note {
     font-family: 'Devonshire';
-    background-color: rgb(252, 223, 219);
+    background-color: $color-background-note;
     h2 {
         color: black;
         font-size: 20px;
@@ -48,7 +48,7 @@
         border: 2px solid black;
         text-decoration: none;
     }
-    h2 + h3 {
+    h2, h3 {
         text-align: center;
     }
 }

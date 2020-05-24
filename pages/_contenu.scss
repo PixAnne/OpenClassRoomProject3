@@ -15,6 +15,7 @@
 .note {
     font-family: 'Devonshire';
     background-color: $color-background-note;
+    border: 2px solid $color-background-note;
     h2 {
         color: black;
         font-size: 20px;
@@ -26,27 +27,38 @@
 }
 .chic {
     font-family: 'CroissantOne';
-    background-color: rgb(255, 245, 254);
+    background-color: $color-background-chic;
+    border: 2px solid $color-background-chic;
     h2 {
         font-size: 15px;
     }
 }
 .delice {
     font-family: 'Dancing';
-    background-color: rgb(249, 249, 249);
+    background-color: $color-background-delice;
+    border: 2px solid $color-background-delice;
 }
 .palette {
     font-family: 'Kaushan';
-    background-color: rgb(253, 255, 253);
+    background-color: $color-background-palette;
+    border: 2px solid $color-background-palette;
 }
 .contenu {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .menus {
-    a {
-        border: 2px solid black;
-        text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    div {
+        flex: 1 1 0;
+        a {
+            flex: 1 1 0;
+            display: block;
+            text-decoration: none;
+        }
     }
     h2, h3 {
         text-align: center;

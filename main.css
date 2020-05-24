@@ -36,6 +36,14 @@ header h1 {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
@@ -50,6 +58,9 @@ footer {
   padding-right: 20px;
   padding-bottom: 15px;
   padding-top: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
 }
 
 footer a {
@@ -93,6 +104,7 @@ footer button {
 .note {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
+  border: 2px solid #fcdfdb;
 }
 
 .note h2 {
@@ -108,6 +120,7 @@ footer button {
 .chic {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
+  border: 2px solid #fff5fe;
 }
 
 .chic h2 {
@@ -117,11 +130,13 @@ footer button {
 .delice {
   font-family: 'Dancing';
   background-color: #f9f9f9;
+  border: 2px solid #f9f9f9;
 }
 
 .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
+  border: 2px solid #fdfffd;
 }
 
 .contenu {
@@ -132,10 +147,35 @@ footer button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.menus a {
-  border: 2px solid black;
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menus div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.menus div a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  display: block;
   text-decoration: none;
 }
 
@@ -219,6 +259,7 @@ h1 {
 
 .la_note_enchantée h2 {
   font-size: 40px;
+  font-weight: normal;
 }
 
 .la_note_enchantée h3 {
@@ -227,7 +268,6 @@ h1 {
 
 .la_note_enchantée table {
   font-size: 20px;
-  text-align: center;
 }
 
 .la_palette_du_gout {

@@ -6,6 +6,10 @@ footer {
     padding-right: 20px;
     padding-bottom: 15px;
     padding-top: 15px;
+
+    position: sticky;
+    bottom: 0px;
+
     a {
         color: $color-title;
         background-color: $color-background-title;

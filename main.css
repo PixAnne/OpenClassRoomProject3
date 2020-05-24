@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'CroissantOne';
   src: url("base/croissant-one/CroissantOne-Regular.ttf");
@@ -5,17 +6,17 @@
 
 @font-face {
   font-family: 'Dancing';
-  src: url("base/Dansing-Script/DancingScript-VariableFont_wght.ttf");
+  src: url("base/Dancing_Script/DancingScript-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: 'Devonchire';
+  font-family: 'Devonshire';
   src: url("base/Devonshire/Devonshire-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Kaushan';
-  src: url("base/KaushanScript-Regular.otf");
+  src: url("base/kaushan-script/KaushanScript-Regular.otf");
 }
 
 header h1 {
@@ -112,5 +113,21 @@ footer button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.la_note_enchantée {
+  font-family: 'Devonshire';
+}
+
+.la_palette_du_gout {
+  font-family: 'Kaushan';
+}
+
+.le_chic_a_la_francaise {
+  font-family: 'CroissantOne';
+}
+
+.le_delice_des_papilles {
+  font-family: 'Dancing';
 }
 /*# sourceMappingURL=main.css.map */

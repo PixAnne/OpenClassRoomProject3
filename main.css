@@ -213,6 +213,9 @@ body section {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
   border: 2px solid #fcdfdb;
+  margin: 10px 50px 10px 400px;
+  -webkit-box-shadow: 3px 3px 4px grey;
+          box-shadow: 3px 3px 4px grey;
 }
 
 .note h2 {
@@ -229,6 +232,9 @@ body section {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
   border: 2px solid #fff5fe;
+  margin: 10px 400px 10px 50px;
+  -webkit-box-shadow: 3px 3px 4px grey;
+          box-shadow: 3px 3px 4px grey;
 }
 
 .chic h2 {
@@ -239,12 +245,18 @@ body section {
   font-family: 'Dancing';
   background-color: #f9f9f9;
   border: 2px solid #f9f9f9;
+  margin: 10px 50px 10px 400px;
+  -webkit-box-shadow: 3px 3px 4px grey;
+          box-shadow: 3px 3px 4px grey;
 }
 
 .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
   border: 2px solid #fdfffd;
+  margin: 10px 400px 10px 50px;
+  -webkit-box-shadow: 3px 3px 4px grey;
+          box-shadow: 3px 3px 4px grey;
 }
 
 .contenu {
@@ -291,26 +303,6 @@ body section {
   text-align: center;
 }
 
-.prochainement {
-  color: #fdca50;
-  background-color: #559c88;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  width: 300px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.prochainement h2 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 15px;
-  margin-right: 15px;
-  text-align: center;
-}
-
 @-webkit-keyframes blink {
   0% {
     opacity: .2;
@@ -335,7 +327,27 @@ body section {
   }
 }
 
-h2 .point {
+.prochainement {
+  color: #fdca50;
+  background-color: #559c88;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.prochainement h2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.prochainement h2 .point {
   -webkit-animation-name: blink;
           animation-name: blink;
   -webkit-animation-duration: 1.4s;
@@ -346,12 +358,12 @@ h2 .point {
           animation-fill-mode: both;
 }
 
-h2 .point:nth-child(2) {
+.prochainement h2 .point:nth-child(2) {
   -webkit-animation-delay: .2s;
           animation-delay: .2s;
 }
 
-h2 .point:nth-child(3) {
+.prochainement h2 .point:nth-child(3) {
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }

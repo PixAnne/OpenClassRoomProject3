@@ -301,6 +301,18 @@ body section {
 
 .menus h2, .menus h3 {
   text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.menus h2 {
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+
+.menus h3 {
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 @-webkit-keyframes blink {

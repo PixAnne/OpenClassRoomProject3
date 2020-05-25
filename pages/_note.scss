@@ -44,3 +44,12 @@ h1 {
     padding-right: 150px;
 
 }
+
+.titre_bas {
+    svg, h3 {
+        display: block;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

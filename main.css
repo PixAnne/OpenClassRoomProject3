@@ -430,7 +430,7 @@ h1 {
   border: 1px solid #fcdfdb;
   -webkit-box-shadow: 1px 1px 2px #fcdfdb;
           box-shadow: 1px 1px 2px #fcdfdb;
-  margin: 80px;
+  margin: 40px 200px 80px 200px;
   background-color: #fcdfdb;
 }
 
@@ -445,6 +445,16 @@ h1 {
 
 .la_note_enchantée table {
   font-size: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.la_note_enchantée table .plat {
+  text-align: left;
+}
+
+.la_note_enchantée table .prix {
+  text-align: right;
 }
 
 .la_palette_du_gout {

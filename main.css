@@ -445,8 +445,9 @@ h1 {
 
 .la_note_enchantée table {
   font-size: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100%;
 }
 
 .la_note_enchantée table .plat {
@@ -455,6 +456,28 @@ h1 {
 
 .la_note_enchantée table .prix {
   text-align: right;
+}
+
+.partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.partie img {
+  display: block;
+}
+
+.partie h3 {
+  display: block;
 }
 
 .la_palette_du_gout {

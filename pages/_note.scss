@@ -18,8 +18,9 @@ h1 {
     }
     table {
         font-size: 20px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
+        width: 100%;
         .plat {
             text-align: left;
         }
@@ -27,4 +28,19 @@ h1 {
             text-align: right;
         }
     }
+}
+
+.partie {
+    img {
+        display: block;
+    }
+    h3 {
+        display: block;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+
 }

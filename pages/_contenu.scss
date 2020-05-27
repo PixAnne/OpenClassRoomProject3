@@ -1,94 +1,77 @@
 body {
-    section {
-        flex: 1;
-    }
-}
 
-.haut {
-    a {
-        display: block;
-    }
-    display: flex;
-    justify-content: space-around;
-}
-.bas {
-    a {
-        display: block;
-    }
-    display: flex;
-    justify-content: space-around;
-}
-.note {
-    font-family: 'Devonshire';
-    background-color: $color-background-note;
-    border: 2px solid $color-background-note;
-    margin: 10px 50px 10px 400px;
-    box-shadow: 3px 3px 4px grey;
-    svg {
-        align-items: center;
-    }
-    h2 {
-        color: black;
-        font-size: 20px;
-    }
-    h3 {
-        color: black;
-        font-size: 35px;
-    }
-}
-.chic {
-    font-family: 'CroissantOne';
-    background-color: $color-background-chic;
-    border: 2px solid $color-background-chic;
-    margin: 10px 400px 10px 50px;
-    box-shadow: 3px 3px 4px grey;
-    h2 {
-        font-size: 15px;
-    }
-}
-.delice {
-    font-family: 'Dancing';
-    background-color: $color-background-delice;
-    border: 2px solid $color-background-delice;
-    margin: 10px 50px 10px 400px;
-    box-shadow: 3px 3px 4px grey;
-}
-.palette {
-    font-family: 'Kaushan';
-    background-color: $color-background-palette;
-    border: 2px solid $color-background-palette;
-    margin: 10px 400px 10px 50px;
-    box-shadow: 3px 3px 4px grey;
-}
-.contenu {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-.menus {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    div {
-        flex: 1 1 0;
-        a {
-            flex: 1 1 0;
-            display: block;
-            text-decoration: none;
-        }
-    }
-    h2, h3 {
+    h1 {
         text-align: center;
-        padding-right: 8px;
-        padding-left: 8px;
+        font-size: 25px;
     }
-    h2 {
-        padding-top: 70px;
-        padding-bottom: 0;
-    }
-    h3 {
-        padding-top: 0;
-        padding-bottom: 50px;
+    
+    .contenu {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    
+        .menus {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            
+            & > div {
+                display: flex;
+                flex: 1 1 0;
+                flex-direction: row;
+                .conteneur_menu {
+                    padding: 20px;
+                    display: flex;
+                    flex: 1 1 0;
+                    
+                    a {
+                        flex: 1 1 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+
+                        h2, h3 {
+                            text-align: center;
+                            padding-right: 8px;
+                            padding-left: 8px;
+                            margin: 0;
+                        }
+                    }
+
+                    .note {
+                        font-family: 'Devonshire';
+                        @include backgroundBorderAndShadow($color-background-note);
+                    
+                        h2 {
+                            color: black;
+                            font-size: 20px;
+                        }
+                        h3 {
+                            color: black;
+                            font-size: 35px;
+                        }
+                    }
+                    .chic {
+                        font-family: 'CroissantOne';
+                        @include backgroundBorderAndShadow($color-background-chic);
+                    
+                        h2 {
+                            font-size: 15px;
+                        }
+                    }
+                    .delice {
+                        font-family: 'Dancing';
+                        @include backgroundBorderAndShadow($color-background-delice);
+                    }
+                    .palette {
+                        font-family: 'Kaushan';
+                        @include backgroundBorderAndShadow($color-background-palette);
+                    }
+                }
+            }
+        }
     }
 }
 

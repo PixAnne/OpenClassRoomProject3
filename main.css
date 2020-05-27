@@ -1,157 +1,10 @@
 @charset "UTF-8";
-/* Variables Chic */
-@font-face {
-  font-family: 'CroissantOne';
-  src: url("base/croissant-one/CroissantOne-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Dancing';
-  src: url("base/Dancing_Script/DancingScript-VariableFont_wght.ttf");
-}
-
-@font-face {
-  font-family: 'Devonshire';
-  src: url("base/Devonshire/Devonshire-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Kaushan';
-  src: url("base/kaushan-script/KaushanScript-Regular.otf");
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: .2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .2;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: .2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .2;
-  }
-}
-
-.prochainement {
-  color: #fdca50;
-  background-color: #559c88;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  width: 300px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 200px;
-}
-
-.prochainement h2 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-}
-
-.prochainement h2 .point {
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.prochainement h2 .point:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.prochainement h2 .point:nth-child(3) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header h1 {
-  color: #fdca50;
-  background-color: #559c88;
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #559c88;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0px;
-}
-
-footer a {
-  color: #fdca50;
-  background-color: #559c88;
-  display: block;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-footer button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: #559c88;
-}
-
-footer button :hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
+/* Couleur du logo */
+/* Variables La note enchantée */
+/* Variables Le délice des papilles */
+/* Variables Le chic à la française */
+/* Variables La palette du goût */
+/* Animation "wiggles" des buttons du footer */
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -198,7 +51,6 @@ footer button :hover {
             transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 @keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -246,146 +98,287 @@ footer button :hover {
   }
 }
 
-body section {
+/* Animation ... du button prochainement */
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+/* Menus du contenu */
+/* Police "Le chic à la française */
+@font-face {
+  font-family: 'CroissantOne';
+  src: url("base/croissant-one/CroissantOne-Regular.ttf");
+}
+
+/* Police "Le délice des papilles */
+@font-face {
+  font-family: 'Dancing';
+  src: url("base/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+/* Police "La note enchantée */
+@font-face {
+  font-family: 'Devonshire';
+  src: url("base/Devonshire/Devonshire-Regular.ttf");
+}
+
+/* Police "La palette du goût */
+@font-face {
+  font-family: 'Kaushan';
+  src: url("base/kaushan-script/KaushanScript-Regular.otf");
+}
+
+.prochainement {
+  color: #fdca50;
+  background-color: #559c88;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 200px;
+}
+
+.prochainement h2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.prochainement h2 .point {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.prochainement h2 .point:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.prochainement h2 .point:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header a {
+  text-decoration: none;
+}
+
+body header a h1 {
+  color: #fdca50;
+  background-color: #559c88;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #559c88;
+  padding: 15px 20px 15px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  /* Fixe footer en bas                */
+  bottom: 0px;
+  /* fonctionne avec position: sticky; */
+}
+
+footer a {
+  color: #fdca50;
+  background-color: #559c88;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer a button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #559c88;
+}
+
+footer a button :hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+body .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.haut {
+body .contenu .menus {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.haut a {
-  display: block;
-}
-
-.bas {
+body .contenu .menus > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.bas a {
-  display: block;
+body .contenu .menus > div .conteneur_menu {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
-.note {
+body .contenu .menus > div .conteneur_menu a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+body .contenu .menus > div .conteneur_menu a h2, body .contenu .menus > div .conteneur_menu a h3 {
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin: 0;
+}
+
+body .contenu .menus > div .conteneur_menu .note {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
   border: 2px solid #fcdfdb;
-  margin: 10px 50px 10px 400px;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
 
-.note svg {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.note h2 {
+body .contenu .menus > div .conteneur_menu .note h2 {
   color: black;
   font-size: 20px;
 }
 
-.note h3 {
+body .contenu .menus > div .conteneur_menu .note h3 {
   color: black;
   font-size: 35px;
 }
 
-.chic {
+body .contenu .menus > div .conteneur_menu .chic {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
   border: 2px solid #fff5fe;
-  margin: 10px 400px 10px 50px;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
 
-.chic h2 {
+body .contenu .menus > div .conteneur_menu .chic h2 {
   font-size: 15px;
 }
 
-.delice {
+body .contenu .menus > div .conteneur_menu .delice {
   font-family: 'Dancing';
   background-color: #f9f9f9;
   border: 2px solid #f9f9f9;
-  margin: 10px 50px 10px 400px;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
 
-.palette {
+body .contenu .menus > div .conteneur_menu .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
   border: 2px solid #fdfffd;
-  margin: 10px 400px 10px 50px;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
-}
-
-.contenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.menus div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-}
-
-.menus div a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  display: block;
-  text-decoration: none;
-}
-
-.menus h2, .menus h3 {
-  text-align: center;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-.menus h2 {
-  padding-top: 70px;
-  padding-bottom: 0;
-}
-
-.menus h3 {
-  padding-top: 0;
-  padding-bottom: 50px;
 }
 
 .mentions_legales {
@@ -427,11 +420,6 @@ body section {
   margin-bottom: 50px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 28px;
-}
-
 .la_note_enchantée {
   font-family: 'Devonshire';
   text-align: center;
@@ -470,7 +458,7 @@ h1 {
   padding-top: 10px;
 }
 
-.partie {
+.la_note_enchantée .partie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,15 +472,15 @@ h1 {
   padding-right: 150px;
 }
 
-.partie img {
+.la_note_enchantée .partie img {
   display: block;
 }
 
-.partie h3 {
+.la_note_enchantée .partie h3 {
   display: block;
 }
 
-.titre_bas {
+.la_note_enchantée .titre_bas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,19 +492,19 @@ h1 {
           align-items: center;
 }
 
-.titre_bas svg, .titre_bas h3 {
+.la_note_enchantée .titre_bas svg, .la_note_enchantée .titre_bas h3 {
   display: block;
 }
 
 .la_palette_du_gout {
   font-family: 'Kaushan';
   text-align: center;
+  padding-bottom: 150px;
   border: 1px solid #fdfffd;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   margin: 40px 200px 80px 200px;
   background-color: #fdfffd;
-  padding-bottom: 150px;
 }
 
 .la_palette_du_gout h1 {
@@ -555,12 +543,22 @@ h1 {
 .le_chic_a_la_francaise {
   font-size: 18px;
   text-align: center;
+  padding-bottom: 220px;
   border: 1px solid #fff5fe;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   margin: 40px 200px 80px 200px;
-  padding-bottom: 220px;
   background-color: #fff5fe;
+}
+
+.le_chic_a_la_francaise h2 {
+  font-size: 35px;
+  font-family: 'CroissantOne';
+}
+
+.le_chic_a_la_francaise h3 {
+  font-size: 20px;
+  font-family: 'CroissantOne';
 }
 
 .le_chic_a_la_francaise .entrees {
@@ -594,26 +592,24 @@ h1 {
   padding-top: 10px;
 }
 
-.le_chic_a_la_francaise h2 {
-  font-size: 35px;
-  font-family: 'CroissantOne';
-}
-
-.le_chic_a_la_francaise h3 {
-  font-size: 20px;
-  font-family: 'CroissantOne';
-}
-
 .le_delice_des_papilles {
   font-family: 'Dancing';
   font-size: 18px;
   text-align: center;
+  padding-bottom: 220px;
   border: 1px solid #f9f9f9;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   margin: 40px 200px 80px 200px;
-  padding-bottom: 220px;
   background-color: #f9f9f9;
+}
+
+.le_delice_des_papilles h2 {
+  font-size: 42px;
+}
+
+.le_delice_des_papilles h3 {
+  font-size: 22px;
 }
 
 .le_delice_des_papilles table {
@@ -633,13 +629,5 @@ h1 {
   text-align: right;
   padding-bottom: 5px;
   padding-top: 10px;
-}
-
-.le_delice_des_papilles h2 {
-  font-size: 42px;
-}
-
-.le_delice_des_papilles h3 {
-  font-size: 22px;
 }
 /*# sourceMappingURL=main.css.map */

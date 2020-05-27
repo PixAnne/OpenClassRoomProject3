@@ -1,42 +1,45 @@
 .le_chic_a_la_francaise {
     font-size: 18px;
     text-align: center;
-    border: 1px solid $color-background-chic;
-    box-shadow: 1px 1px 2px grey;
-    margin: 40px 200px 80px 200px;
     padding-bottom: 220px;
-    background-color: $color-background-chic;
+    @include backgroundBorderAndShadowPage($color-background-chic);
+    
+    h2 {
+        font-size: 35px;
+        font-family: 'CroissantOne';
+    }
+
+    h3 {
+        font-size: 20px;
+        font-family: 'CroissantOne';
+    }
+
     .entrees {
         color: $color-entrees;
     }
+    
     .plats {
         color: $color-plats;
     }
+    
     .desserts {
         color: $color-desserts;
     }
+    
     table {
-            font-size: 15px;
-            padding-left: 150px;
-            padding-right: 150px;
-            width: 100%;
-            .plat {
-                text-align: left;
-                padding-bottom: 5px;
-                padding-top: 10px;
-            }
-            .prix {
-                text-align: right;
-                padding-bottom: 5px;
-                padding-top: 10px;
-            }
+        font-size: 15px;
+        padding-left: 150px;
+        padding-right: 150px;
+        width: 100%;
+        .plat {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 10px;
         }
-        h2 {
-            font-size: 35px;
-            font-family: 'CroissantOne';
+        .prix {
+            text-align: right;
+            padding-bottom: 5px;
+            padding-top: 10px;
         }
-        h3 {
-            font-size: 20px;
-            font-family: 'CroissantOne';
-        }
+    }
 }

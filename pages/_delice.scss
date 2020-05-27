@@ -1,3 +1,32 @@
 .le_delice_des_papilles {
     font-family: 'Dancing';
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid $color-background-delice;
+    box-shadow: 1px 1px 2px grey;
+    margin: 40px 200px 80px 200px;
+    padding-bottom: 220px;
+    background-color: $color-background-delice;
+    table {
+        font-size: 20px;
+        padding-left: 150px;
+        padding-right: 150px;
+        width: 100%;
+        .plat {
+            text-align: left;
+            padding-bottom: 5px;
+            padding-top: 10px;
+        }
+        .prix {
+            text-align: right;
+            padding-bottom: 5px;
+            padding-top: 10px;
+        }
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 22px;
+    }
 }

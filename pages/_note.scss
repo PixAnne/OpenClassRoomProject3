@@ -6,7 +6,7 @@ h1 {
     font-family: 'Devonshire';
     text-align: center;
     border: 1px solid $color-background-note;
-    box-shadow: 1px 1px 2px $color-background-note ;
+    box-shadow: 1px 1px 2px grey ;
     margin: 40px 200px 80px 200px;
     background-color: $color-background-note;
     h2 {
@@ -23,9 +23,13 @@ h1 {
         width: 100%;
         .plat {
             text-align: left;
+            padding-bottom: 5px;
+            padding-top: 10px;
         }
         .prix {
             text-align: right;
+            padding-bottom: 5px;
+            padding-top: 10px;
         }
     }
 }

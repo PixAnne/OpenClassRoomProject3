@@ -123,6 +123,7 @@
 }
 
 /* Menus du contenu */
+/* Dégradé de couleurs des titres */
 /* Police "Le chic à la française */
 @font-face {
   font-family: 'CroissantOne';
@@ -232,26 +233,26 @@ footer {
   /* fonctionne avec position: sticky; */
 }
 
-footer a {
-  color: #fdca50;
-  background-color: #559c88;
-  display: block;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-footer a button {
+footer button {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #559c88;
 }
 
-footer a button :hover {
+footer button :hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+footer button a {
+  color: #fdca50;
+  background-color: #559c88;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 body h1 {
@@ -363,6 +364,16 @@ body .contenu .menus > div .conteneur_menu .chic {
 
 body .contenu .menus > div .conteneur_menu .chic h2 {
   font-size: 15px;
+  background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+body .contenu .menus > div .conteneur_menu .chic h3 {
+  color: #c7741d;
 }
 
 body .contenu .menus > div .conteneur_menu .delice {
@@ -373,12 +384,38 @@ body .contenu .menus > div .conteneur_menu .delice {
           box-shadow: 3px 3px 4px grey;
 }
 
+body .contenu .menus > div .conteneur_menu .delice h2 {
+  background-image: linear-gradient(135deg, #0216d9, #0070f0, #189df6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+body .contenu .menus > div .conteneur_menu .delice h3 {
+  color: #0070f0;
+}
+
 body .contenu .menus > div .conteneur_menu .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
   border: 2px solid #fdfffd;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
+}
+
+body .contenu .menus > div .conteneur_menu .palette h2 {
+  background-image: linear-gradient(135deg, #3e9642, #70bf5d, #c1fb94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+body .contenu .menus > div .conteneur_menu .palette h3 {
+  color: #70bf5d;
 }
 
 .mentions_legales {
@@ -515,6 +552,12 @@ body .contenu .menus > div .conteneur_menu .palette {
 .la_palette_du_gout h2 {
   font-size: 40px;
   font-weight: normal;
+  background-image: linear-gradient(135deg, #3e9642, #70bf5d, #c1fb94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .la_palette_du_gout h3 {
@@ -554,6 +597,12 @@ body .contenu .menus > div .conteneur_menu .palette {
 .le_chic_a_la_francaise h2 {
   font-size: 35px;
   font-family: 'CroissantOne';
+  background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .le_chic_a_la_francaise h3 {
@@ -606,6 +655,12 @@ body .contenu .menus > div .conteneur_menu .palette {
 
 .le_delice_des_papilles h2 {
   font-size: 42px;
+  background-image: linear-gradient(135deg, #0216d9, #0070f0, #189df6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .le_delice_des_papilles h3 {

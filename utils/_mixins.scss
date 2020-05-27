@@ -11,3 +11,16 @@
     margin: 40px 200px 80px 200px;
     background-color: $backgroundColor;    
 }
+
+/* Dégradé de couleurs des titres */
+@mixin gradientColor($orientation, $startColor, $middleColor, $endColor) {
+    background-image: linear-gradient($orientation, $startColor, $middleColor, $endColor);
+    
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+       -moz-text-fill-color: transparent;
+            text-fill-color: transparent;
+}

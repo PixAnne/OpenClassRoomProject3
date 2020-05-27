@@ -12,6 +12,7 @@
     h2 {
         font-size: 40px;
         font-weight: normal;
+        @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
     }
 
     h3 {

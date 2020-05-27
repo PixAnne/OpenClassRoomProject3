@@ -7,23 +7,23 @@ footer {
     position: sticky; /* Fixe footer en bas                */
     bottom: 0px;      /* fonctionne avec position: sticky; */
 
-    a {
-        color: $color-title;
-        background-color: $color-background-title;
-        display: block;
-        font-size: 20px;
-        text-decoration: none;
 
-        button {
-            margin: 0;
-            padding: 0;
-            border: 0;
+    button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: $color-background-title;
+        :hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        a {
+            color: $color-title;
             background-color: $color-background-title;
-            :hover {
-                animation: shake 0.5s;
-                animation-iteration-count: infinite;
-            }
+            display: block;
+            font-size: 20px;
+            text-decoration: none;
         }
     }
-    
 }

@@ -59,15 +59,37 @@ body {
                     
                         h2 {
                             font-size: 15px;
+
+                            @include gradientColor(135deg, $colorEntreesChic, $colorPlatsChic, $colorDessertsChic);
+                        }
+
+                        h3 {
+                            color: $colorEntreesChic;
                         }
                     }
                     .delice {
                         font-family: 'Dancing';
                         @include backgroundBorderAndShadow($color-background-delice);
+
+                        h2 {
+                            @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
+                        }
+
+                        h3 {
+                            color: $colorPlatsDelice;
+                        }
                     }
                     .palette {
                         font-family: 'Kaushan';
                         @include backgroundBorderAndShadow($color-background-palette);
+
+                        h2 {
+                            @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
+                        }
+
+                        h3 {
+                            color: $colorPalette2;
+                        }
                     }
                 }
             }

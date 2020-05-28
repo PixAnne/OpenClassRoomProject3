@@ -560,7 +560,28 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   text-fill-color: transparent;
 }
 
-.la_palette_du_gout h3 {
+.la_palette_du_gout .partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.la_palette_du_gout .partie img {
+  display: block;
+  -webkit-transform: translate(100, 0) scale(-1, 1);
+          transform: translate(100, 0) scale(-1, 1);
+}
+
+.la_palette_du_gout .partie h3 {
+  display: block;
   font-size: 30px;
 }
 
@@ -622,6 +643,28 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   color: #6e4cc9;
 }
 
+.le_chic_a_la_francaise .partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.le_chic_a_la_francaise .partie img {
+  display: block;
+}
+
+.le_chic_a_la_francaise .partie h3 {
+  display: block;
+}
+
 .le_chic_a_la_francaise table {
   font-size: 15px;
   padding-left: 150px;
@@ -663,7 +706,26 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   text-fill-color: transparent;
 }
 
-.le_delice_des_papilles h3 {
+.le_delice_des_papilles .partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.le_delice_des_papilles .partie img {
+  display: block;
+}
+
+.le_delice_des_papilles .partie h3 {
+  display: block;
   font-size: 22px;
 }
 

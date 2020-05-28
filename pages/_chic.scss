@@ -26,6 +26,22 @@
     .desserts {
         color: $colorDessertsChic;
     }
+
+    .partie {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+    
+        img {
+            display: block;
+        }
+    
+        h3 {
+            display: block;
+        }
+    }
     
     table {
         font-size: 15px;

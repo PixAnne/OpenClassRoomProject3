@@ -15,8 +15,22 @@
         @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
     }
 
-    h3 {
-        font-size: 30px;
+    .partie {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+    
+        img {
+            display: block;
+            transform: translate(100, 0) scale(-1, 1);
+        }
+    
+        h3 {
+            display: block;
+            font-size: 30px;
+        }
     }
     
     table {

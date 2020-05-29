@@ -3,6 +3,7 @@
     font-size: 18px;
     text-align: center;
     padding-bottom: 220px;
+    width: 100vw;
     @include backgroundBorderAndShadowPage($color-background-delice);
     
     h2 {
@@ -14,8 +15,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 150px;
-        padding-right: 150px;
     
         img {
             display: block;

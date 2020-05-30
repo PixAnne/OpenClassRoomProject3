@@ -1,50 +1,20 @@
 .la_note_enchantée {
-    font-family: 'Devonshire';
-    text-align: center;
-    @include backgroundBorderAndShadowPage($color-background-note);
+    font-family: 'Nickainley'; 
+    @include ProprietesCommunesPage($color-background-note);
     
     h2 {
         font-size: 40px;
         font-weight: normal;
+        font-family: 'Devonshire';
     }
     
     h3 {
         font-size: 30px;
+        font-family: 'Devonshire';
     }
     
     table {
         font-size: 20px;
-        padding-left: 150px;
-        padding-right: 150px;
-        width: 100%;
-        
-        .plat {
-            text-align: left;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
-        
-        .prix {
-            text-align: right;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
-    }
-
-    .partie {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 150px;
-        padding-right: 150px;
-    
-        img {
-            display: block;
-        }
-    
-        h3 {
-            display: block;
-        }
     }
 
     .titre_bas {
@@ -52,8 +22,8 @@
         justify-content: center;
         align-items: center;
         
-        svg, h3 {
-            display: block;
+        h4 {
+            margin-left: 10px;
         }
     }
 }

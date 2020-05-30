@@ -5,11 +5,14 @@
     box-shadow: 3px 3px 4px grey;
 }
 
-@mixin backgroundBorderAndShadowPage($backgroundColor) {
+@mixin ProprietesCommunesPage($backgroundColor) {
     border: 1px solid $backgroundColor;
     box-shadow: 1px 1px 2px grey ;
-    margin: 40px 200px 80px 200px;
-    background-color: $backgroundColor;    
+    background-color: $backgroundColor;
+    width: 85%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 50px;
 }
 
 /* Dégradé de couleurs des titres */

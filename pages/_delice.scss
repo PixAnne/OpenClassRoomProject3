@@ -1,64 +1,20 @@
 .le_delice_des_papilles {
     font-family: 'Dancing';
     font-size: 18px;
-    text-align: center;
-    padding-bottom: 220px;
-    width: 100vw;
-    @include backgroundBorderAndShadowPage($color-background-delice);
+    @include ProprietesCommunesPage($color-background-delice);
     
     h2 {
         font-size: 42px;
         @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
     }
 
-    .partie {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-        img {
-            display: block;
-        }
-    
+    .partie {    
         h3 {
-            display: block;
             font-size: 22px;
-            position: relative;
-        }
-        h3:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #FFF;
-            visibility: hidden;
-            transition: all 0.3s ease-in-out;
-        }
-        h3:hover:before {
-            visibility: visible;
-            width: 100%;
         }
     }
 
-
     table {
         font-size: 20px;
-        padding-left: 150px;
-        padding-right: 150px;
-        width: 100%;
-        
-        .plat {
-            text-align: left;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
-        
-        .prix {
-            text-align: right;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
     }
 }

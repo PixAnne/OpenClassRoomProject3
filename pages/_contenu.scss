@@ -3,13 +3,15 @@ body {
     h1 {
         text-align: center;
         font-size: 25px;
+        font-family: 'Playtime';
     }
     
     .contenu {
         display: flex;
         flex-direction: column;
         flex: 1;
-    
+        background-color: white;
+
         .menus {
             flex: 1;
             display: flex;
@@ -46,10 +48,10 @@ body {
                             transition-property: all;
                             transition-duration: 400ms;
                         }
-                        .zoom:hover  {
+                        &:hover .zoom  {
                             transform: scale(1.2);
                             opacity: 0.65;
-                        }
+                        }                        
                     }
 
                     .note {
@@ -68,7 +70,7 @@ body {
                     .chic {
                         font-family: 'CroissantOne';
                         @include backgroundBorderAndShadow($color-background-chic);
-                    
+                        
                         h2 {
                             font-size: 15px;
 
@@ -103,6 +105,61 @@ body {
                             color: $colorPalette2;
                         }
                     }
+                }
+            }
+        }
+
+        .carte {
+            padding-bottom: 50px;
+            
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .partie {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 80%;
+                
+                    .vertical-mirror {
+                        transform: scaleX(-1);
+                    }
+
+                    h3 {
+                        position: relative;
+                    }
+
+                    h3:before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: currentColor;
+                        transition: width 0.3s ease-in-out;
+                    }
+                    
+                    h3:hover:before {
+                        width: 100%;
+                    }
+                }
+            }        
+
+            table {
+                width: 85%;
+                .plat {
+                    text-align: left;
+                    padding-bottom: 5px;
+                    padding-top: 10px;
+                }
+                
+                .prix {
+                    text-align: right;
+                    padding-bottom: 5px;
+                    padding-top: 10px;
                 }
             }
         }

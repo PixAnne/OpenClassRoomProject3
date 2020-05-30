@@ -142,10 +142,21 @@
   src: url("base/Devonshire/Devonshire-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Nickainley';
+  src: url("base/Nickainley/Nickainley-Normal.ttf");
+}
+
 /* Police "La palette du goût */
 @font-face {
   font-family: 'Kaushan';
   src: url("base/kaushan-script/KaushanScript-Regular.otf");
+}
+
+/* Police h1 des pages menu */
+@font-face {
+  font-family: 'Playtime';
+  src: url("base/Playtime/playtime.ttf");
 }
 
 .prochainement {
@@ -190,6 +201,10 @@
           animation-delay: .4s;
 }
 
+html {
+  background-color: #559c88;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -211,10 +226,11 @@ body header a h1 {
   background-color: #559c88;
   width: 100%;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-weight: bold;
 }
 
 footer {
@@ -263,6 +279,7 @@ footer button a {
 body h1 {
   text-align: center;
   font-size: 25px;
+  font-family: 'Playtime';
 }
 
 body .contenu {
@@ -276,6 +293,7 @@ body .contenu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-color: white;
 }
 
 body .contenu .menus {
@@ -360,7 +378,7 @@ body .contenu .menus > div .conteneur_menu a .zoom {
           transition-duration: 400ms;
 }
 
-body .contenu .menus > div .conteneur_menu a .zoom:hover {
+body .contenu .menus > div .conteneur_menu a:hover .zoom {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.65;
@@ -448,10 +466,79 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   color: #70bf5d;
 }
 
+body .contenu .carte {
+  padding-bottom: 50px;
+}
+
+body .contenu .carte section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contenu .carte section .partie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+body .contenu .carte section .partie .vertical-mirror {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+body .contenu .carte section .partie h3 {
+  position: relative;
+}
+
+body .contenu .carte section .partie h3:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+body .contenu .carte section .partie h3:hover:before {
+  width: 100%;
+}
+
+body .contenu .carte table {
+  width: 85%;
+}
+
+body .contenu .carte table .plat {
+  text-align: left;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+body .contenu .carte table .prix {
+  text-align: right;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
 .mentions_legales {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 60px;
+  padding: 40px;
   font-size: 15px;
 }
 
@@ -462,6 +549,7 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 5px;
+  margin-top: 0;
 }
 
 .mentions_legales h2 {
@@ -482,69 +570,35 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
 
 .mentions_legales .intro {
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
 }
 
 .la_note_enchantée {
-  font-family: 'Devonshire';
-  text-align: center;
+  font-family: 'Nickainley';
   border: 1px solid #fcdfdb;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
-  margin: 40px 200px 80px 200px;
   background-color: #fcdfdb;
+  width: 85%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 50px;
 }
 
 .la_note_enchantée h2 {
   font-size: 40px;
   font-weight: normal;
+  font-family: 'Devonshire';
 }
 
 .la_note_enchantée h3 {
   font-size: 30px;
+  font-family: 'Devonshire';
 }
 
 .la_note_enchantée table {
   font-size: 20px;
-  padding-left: 150px;
-  padding-right: 150px;
-  width: 100%;
-}
-
-.la_note_enchantée table .plat {
-  text-align: left;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.la_note_enchantée table .prix {
-  text-align: right;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.la_note_enchantée .partie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.la_note_enchantée .partie img {
-  display: block;
-}
-
-.la_note_enchantée .partie h3 {
-  display: block;
 }
 
 .la_note_enchantée .titre_bas {
@@ -559,23 +613,25 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
           align-items: center;
 }
 
-.la_note_enchantée .titre_bas svg, .la_note_enchantée .titre_bas h3 {
-  display: block;
+.la_note_enchantée .titre_bas h4 {
+  margin-left: 10px;
 }
 
 .la_palette_du_gout {
   font-family: 'Kaushan';
-  text-align: center;
-  padding-bottom: 150px;
   border: 1px solid #fdfffd;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
-  margin: 40px 200px 80px 200px;
   background-color: #fdfffd;
+  width: 85%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 50px;
 }
 
 .la_palette_du_gout h1 {
-  text-align: center;
   font-size: 28px;
 }
 
@@ -590,57 +646,26 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   text-fill-color: transparent;
 }
 
-.la_palette_du_gout .partie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.la_palette_du_gout .partie img {
-  display: block;
-}
-
 .la_palette_du_gout .partie h3 {
-  display: block;
   font-size: 30px;
 }
 
 .la_palette_du_gout table {
   font-size: 20px;
-  padding-left: 150px;
-  padding-right: 150px;
-  width: 100%;
-}
-
-.la_palette_du_gout table .plat {
-  text-align: left;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.la_palette_du_gout table .prix {
-  text-align: right;
-  padding-bottom: 5px;
-  padding-top: 10px;
 }
 
 .le_chic_a_la_francaise {
   font-size: 18px;
-  text-align: center;
-  padding-bottom: 220px;
   border: 1px solid #fff5fe;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
-  margin: 40px 200px 80px 200px;
   background-color: #fff5fe;
+  width: 85%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 50px;
 }
 
 .le_chic_a_la_francaise h2 {
@@ -671,58 +696,23 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   color: #6e4cc9;
 }
 
-.le_chic_a_la_francaise .partie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.le_chic_a_la_francaise .partie img {
-  display: block;
-}
-
-.le_chic_a_la_francaise .partie h3 {
-  display: block;
-}
-
 .le_chic_a_la_francaise table {
   font-size: 15px;
-  padding-left: 150px;
-  padding-right: 150px;
-  width: 100%;
-}
-
-.le_chic_a_la_francaise table .plat {
-  text-align: left;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.le_chic_a_la_francaise table .prix {
-  text-align: right;
-  padding-bottom: 5px;
-  padding-top: 10px;
 }
 
 .le_delice_des_papilles {
   font-family: 'Dancing';
   font-size: 18px;
-  text-align: center;
-  padding-bottom: 220px;
-  width: 100vw;
   border: 1px solid #f9f9f9;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
-  margin: 40px 200px 80px 200px;
   background-color: #f9f9f9;
+  width: 85%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 50px;
 }
 
 .le_delice_des_papilles h2 {
@@ -735,62 +725,11 @@ body .contenu .menus > div .conteneur_menu .palette h3 {
   text-fill-color: transparent;
 }
 
-.le_delice_des_papilles .partie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.le_delice_des_papilles .partie img {
-  display: block;
-}
-
 .le_delice_des_papilles .partie h3 {
-  display: block;
   font-size: 22px;
-  position: relative;
-}
-
-.le_delice_des_papilles .partie h3:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.le_delice_des_papilles .partie h3:hover:before {
-  visibility: visible;
-  width: 100%;
 }
 
 .le_delice_des_papilles table {
   font-size: 20px;
-  padding-left: 150px;
-  padding-right: 150px;
-  width: 100%;
-}
-
-.le_delice_des_papilles table .plat {
-  text-align: left;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.le_delice_des_papilles table .prix {
-  text-align: right;
-  padding-bottom: 5px;
-  padding-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

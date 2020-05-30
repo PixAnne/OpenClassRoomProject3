@@ -1,11 +1,8 @@
 .la_palette_du_gout {
     font-family: 'Kaushan';
-    text-align: center;
-    padding-bottom: 150px;
-    @include backgroundBorderAndShadowPage($color-background-palette);
+    @include ProprietesCommunesPage($color-background-palette);
     
     h1 {
-        text-align: center;
         font-size: 28px;
     }
 
@@ -16,36 +13,12 @@
     }
 
     .partie {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 150px;
-        padding-right: 150px;
-    
-        img {
-            display: block;
-        }
-    
         h3 {
-            display: block;
             font-size: 30px;
         }
     }
     
     table {
         font-size: 20px;
-        padding-left: 150px;
-        padding-right: 150px;
-        width: 100%;
-        .plat {
-            text-align: left;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
-        .prix {
-            text-align: right;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
     }  
 }

@@ -1,8 +1,6 @@
 .le_chic_a_la_francaise {
     font-size: 18px;
-    text-align: center;
-    padding-bottom: 220px;
-    @include backgroundBorderAndShadowPage($color-background-chic);
+    @include ProprietesCommunesPage($color-background-chic);
     
     h2 {
         font-size: 35px;
@@ -26,37 +24,8 @@
     .desserts {
         color: $colorDessertsChic;
     }
-
-    .partie {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 150px;
-        padding-right: 150px;
-    
-        img {
-            display: block;
-        }
-    
-        h3 {
-            display: block;
-        }
-    }
     
     table {
         font-size: 15px;
-        padding-left: 150px;
-        padding-right: 150px;
-        width: 100%;
-        .plat {
-            text-align: left;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
-        .prix {
-            text-align: right;
-            padding-bottom: 5px;
-            padding-top: 10px;
-        }
     }
 }

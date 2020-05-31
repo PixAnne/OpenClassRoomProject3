@@ -21,6 +21,7 @@ body {
                 display: flex;
                 flex: 1 1 0;
                 flex-direction: row;
+
                 .conteneur_menu {
                     padding: 20px;
                     display: flex;
@@ -138,7 +139,7 @@ body {
                         height: 2px;
                         bottom: 0;
                         left: 0;
-                        background-color: currentColor;
+                        background-color: currentColor; /* Prend la couleur  actuelle du texte */
                         transition: width 0.3s ease-in-out;
                     }
                     
@@ -150,6 +151,12 @@ body {
 
             table {
                 width: 85%;
+                tr {
+                    @media (max-width: 599px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
                 .plat {
                     text-align: left;
                     padding-bottom: 5px;
@@ -160,6 +167,10 @@ body {
                     text-align: right;
                     padding-bottom: 5px;
                     padding-top: 10px;
+                    @media (max-width: 599px) {
+                        text-align: left;
+                        padding-top: 0;
+                    }
                 }
             }
         }

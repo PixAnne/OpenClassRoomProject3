@@ -6,6 +6,11 @@
     h2 {
         font-size: 42px;
         @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
+        @media (max-width: 599px) {
+            font-size: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     .partie {    
@@ -16,5 +21,8 @@
 
     table {
         font-size: 20px;
+        @media (max-width: 599px) {
+            font-size: 16px;
+        }
     }
 }

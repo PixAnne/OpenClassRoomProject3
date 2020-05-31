@@ -271,11 +271,6 @@ footer button a {
   text-decoration: none;
 }
 
-.vertical-mirror {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
 body h1 {
   text-align: center;
   font-size: 25px;
@@ -513,6 +508,7 @@ body .contenu .carte section .partie h3:before {
   bottom: 0;
   left: 0;
   background-color: currentColor;
+  /* Prend la couleur  actuelle du texte */
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
@@ -523,6 +519,18 @@ body .contenu .carte section .partie h3:hover:before {
 
 body .contenu .carte table {
   width: 85%;
+}
+
+@media (max-width: 599px) {
+  body .contenu .carte table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body .contenu .carte table .plat {
@@ -537,9 +545,23 @@ body .contenu .carte table .prix {
   padding-top: 10px;
 }
 
+@media (max-width: 599px) {
+  body .contenu .carte table .prix {
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
 .mentions_legales {
   padding: 40px;
   font-size: 15px;
+}
+
+@media (max-width: 599px) {
+  .mentions_legales {
+    font-size: 13px;
+    text-align: justify;
+  }
 }
 
 .mentions_legales h1 {
@@ -552,6 +574,12 @@ body .contenu .carte table .prix {
   margin-top: 0;
 }
 
+@media (max-width: 599px) {
+  .mentions_legales h1 {
+    font-size: 30px;
+  }
+}
+
 .mentions_legales h2 {
   text-align: center;
   font-size: 15px;
@@ -560,8 +588,21 @@ body .contenu .carte table .prix {
   margin-bottom: 50px;
 }
 
+@media (max-width: 599px) {
+  .mentions_legales h2 {
+    margin-bottom: 25px;
+  }
+}
+
 .mentions_legales h3 {
   font-size: 20px;
+}
+
+@media (max-width: 599px) {
+  .mentions_legales h3 {
+    text-align: center;
+    font-size: 17px;
+  }
 }
 
 .mentions_legales .article {
@@ -584,6 +625,7 @@ body .contenu .carte table .prix {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .la_note_enchantée h2 {
@@ -592,13 +634,31 @@ body .contenu .carte table .prix {
   font-family: 'Devonshire';
 }
 
+@media (max-width: 599px) {
+  .la_note_enchantée h2 {
+    font-size: 32px;
+  }
+}
+
 .la_note_enchantée h3 {
   font-size: 30px;
   font-family: 'Devonshire';
 }
 
+@media (max-width: 599px) {
+  .la_note_enchantée h3 {
+    font-size: 25px;
+  }
+}
+
 .la_note_enchantée table {
   font-size: 20px;
+}
+
+@media (max-width: 599px) {
+  .la_note_enchantée table {
+    font-size: 15px;
+  }
 }
 
 .la_note_enchantée .titre_bas {
@@ -629,6 +689,7 @@ body .contenu .carte table .prix {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .la_palette_du_gout h1 {
@@ -646,12 +707,30 @@ body .contenu .carte table .prix {
   text-fill-color: transparent;
 }
 
+@media (max-width: 599px) {
+  .la_palette_du_gout h2 {
+    font-size: 32px;
+  }
+}
+
 .la_palette_du_gout .partie h3 {
   font-size: 30px;
 }
 
+@media (max-width: 599px) {
+  .la_palette_du_gout .partie h3 {
+    font-size: 22px;
+  }
+}
+
 .la_palette_du_gout table {
   font-size: 20px;
+}
+
+@media (max-width: 599px) {
+  .la_palette_du_gout table {
+    font-size: 16px;
+  }
 }
 
 .le_chic_a_la_francaise {
@@ -666,6 +745,7 @@ body .contenu .carte table .prix {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .le_chic_a_la_francaise h2 {
@@ -682,6 +762,10 @@ body .contenu .carte table .prix {
 .le_chic_a_la_francaise h3 {
   font-size: 20px;
   font-family: 'CroissantOne';
+}
+
+.le_chic_a_la_francaise svg {
+  fill: currentColor;
 }
 
 .le_chic_a_la_francaise .entrees {
@@ -713,6 +797,7 @@ body .contenu .carte table .prix {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .le_delice_des_papilles h2 {
@@ -725,11 +810,25 @@ body .contenu .carte table .prix {
   text-fill-color: transparent;
 }
 
+@media (max-width: 599px) {
+  .le_delice_des_papilles h2 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .le_delice_des_papilles .partie h3 {
   font-size: 22px;
 }
 
 .le_delice_des_papilles table {
   font-size: 20px;
+}
+
+@media (max-width: 599px) {
+  .le_delice_des_papilles table {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,10 @@
 /* Menus du contenu */
-@mixin backgroundBorderAndShadow($backgroundColor) {
-	background-color: $backgroundColor;
-    border: 2px solid $backgroundColor;   
+@mixin backgroundAndShadow($backgroundColor) {
+	background-color: $backgroundColor;   
     box-shadow: 3px 3px 4px grey;
 }
 
 @mixin ProprietesCommunesPage($backgroundColor) {
-    border: 1px solid $backgroundColor;
     box-shadow: 1px 1px 2px grey ;
     background-color: $backgroundColor;
     width: 85%;

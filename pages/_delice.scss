@@ -3,7 +3,7 @@
     font-size: 18px;
     @include ProprietesCommunesPage($color-background-delice);
     
-    h2 {
+    h3 {
         font-size: 42px;
         @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
         @media (max-width: 599px) {
@@ -14,7 +14,7 @@
     }
 
     .partie {    
-        h3 {
+        h4 {
             font-size: 22px;
         }
 

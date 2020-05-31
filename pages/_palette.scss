@@ -2,11 +2,11 @@
     font-family: 'Kaushan';
     @include ProprietesCommunesPage($color-background-palette);
     
-    h1 {
+    h2 {
         font-size: 28px;
     }
 
-    h2 {
+    h3 {
         font-size: 40px;
         font-weight: normal;
         @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
@@ -16,7 +16,7 @@
     }
 
     .partie {
-        h3 {
+        h4 {
             font-size: 30px;
             @media (max-width: 599px) {
                 font-size: 22px;

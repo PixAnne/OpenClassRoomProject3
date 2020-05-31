@@ -159,48 +159,6 @@
   src: url("base/Playtime/playtime.ttf");
 }
 
-.prochainement {
-  color: #fdca50;
-  background-color: #559c88;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  width: 300px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 200px;
-}
-
-.prochainement h2 {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-}
-
-.prochainement h2 .point {
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.prochainement h2 .point:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.prochainement h2 .point:nth-child(3) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
 html {
   background-color: #559c88;
 }
@@ -256,38 +214,28 @@ footer {
   /* fonctionne avec position: sticky; */
 }
 
-footer button {
+footer a {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #559c88;
+  color: #fdca50;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-footer button :hover {
+footer a:hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-footer button a {
-  color: #fdca50;
-  background-color: #559c88;
-  display: block;
-  font-size: 20px;
-  text-decoration: none;
-}
-
 @media (max-width: 599px) {
-  footer button a {
+  footer a {
     font-size: 15px;
   }
-}
-
-body h1 {
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Playtime';
 }
 
 body .contenu {
@@ -303,6 +251,12 @@ body .contenu {
           flex: 1;
   background-color: white;
   min-height: 500px;
+}
+
+body .contenu h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Playtime';
 }
 
 body .contenu .menus {
@@ -402,9 +356,12 @@ body .contenu .menus > div .conteneur_menu a:hover .zoom {
 body .contenu .menus > div .conteneur_menu .note {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
-  border: 2px solid #fcdfdb;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
+}
+
+body .contenu .menus > div .conteneur_menu .note .logoNote {
+  width: 25%;
 }
 
 body .contenu .menus > div .conteneur_menu .note h2 {
@@ -432,7 +389,6 @@ body .contenu .menus > div .conteneur_menu .note h3 {
 body .contenu .menus > div .conteneur_menu .chic {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
-  border: 2px solid #fff5fe;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
@@ -454,7 +410,6 @@ body .contenu .menus > div .conteneur_menu .chic h3 {
 body .contenu .menus > div .conteneur_menu .delice {
   font-family: 'Dancing';
   background-color: #f9f9f9;
-  border: 2px solid #f9f9f9;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
@@ -475,7 +430,6 @@ body .contenu .menus > div .conteneur_menu .delice h3 {
 body .contenu .menus > div .conteneur_menu .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
-  border: 2px solid #fdfffd;
   -webkit-box-shadow: 3px 3px 4px grey;
           box-shadow: 3px 3px 4px grey;
 }
@@ -528,11 +482,11 @@ body .contenu .carte section .partie .vertical-mirror {
           transform: scaleX(-1);
 }
 
-body .contenu .carte section .partie h3 {
+body .contenu .carte section .partie h4 {
   position: relative;
 }
 
-body .contenu .carte section .partie h3:before {
+body .contenu .carte section .partie h4:before {
   content: "";
   position: absolute;
   width: 0%;
@@ -545,7 +499,7 @@ body .contenu .carte section .partie h3:before {
   transition: width 0.3s ease-in-out;
 }
 
-body .contenu .carte section .partie h3:hover:before {
+body .contenu .carte section .partie h4:hover:before {
   width: 100%;
 }
 
@@ -571,6 +525,51 @@ body .contenu .carte table .prix {
   }
 }
 
+body .contenu .prochainement {
+  color: #fdca50;
+  background-color: #559c88;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 2px 6px;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 200px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+body .contenu .prochainement h2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+body .contenu .prochainement h2 .point {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body .contenu .prochainement h2 .point:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+body .contenu .prochainement h2 .point:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
 .mentions_legales {
   padding: 40px;
   font-size: 15px;
@@ -583,7 +582,7 @@ body .contenu .carte table .prix {
   }
 }
 
-.mentions_legales h1 {
+.mentions_legales h2 {
   text-align: center;
   color: #559c88;
   text-decoration: underline;
@@ -594,12 +593,12 @@ body .contenu .carte table .prix {
 }
 
 @media (max-width: 599px) {
-  .mentions_legales h1 {
+  .mentions_legales h2 {
     font-size: 30px;
   }
 }
 
-.mentions_legales h2 {
+.mentions_legales h3 {
   text-align: center;
   font-size: 15px;
   font-style: italic;
@@ -608,17 +607,17 @@ body .contenu .carte table .prix {
 }
 
 @media (max-width: 599px) {
-  .mentions_legales h2 {
+  .mentions_legales h3 {
     margin-bottom: 25px;
   }
 }
 
-.mentions_legales h3 {
+.mentions_legales h4 {
   font-size: 20px;
 }
 
 @media (max-width: 599px) {
-  .mentions_legales h3 {
+  .mentions_legales h4 {
     text-align: center;
     font-size: 17px;
   }
@@ -632,9 +631,8 @@ body .contenu .carte table .prix {
   text-align: center;
 }
 
-.la_note_enchantée {
+.la_note_enchantee {
   font-family: 'Nickainley';
-  border: 1px solid #fcdfdb;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   background-color: #fcdfdb;
@@ -647,40 +645,40 @@ body .contenu .carte table .prix {
   padding-top: 40px;
 }
 
-.la_note_enchantée h2 {
+.la_note_enchantee h3 {
   font-size: 40px;
   font-weight: normal;
   font-family: 'Devonshire';
 }
 
 @media (max-width: 599px) {
-  .la_note_enchantée h2 {
+  .la_note_enchantee h3 {
     font-size: 32px;
   }
 }
 
-.la_note_enchantée h3 {
+.la_note_enchantee h4 {
   font-size: 30px;
   font-family: 'Devonshire';
 }
 
 @media (max-width: 599px) {
-  .la_note_enchantée h3 {
+  .la_note_enchantee h4 {
     font-size: 25px;
   }
 }
 
-.la_note_enchantée table {
+.la_note_enchantee table {
   font-size: 20px;
 }
 
 @media (max-width: 599px) {
-  .la_note_enchantée table {
+  .la_note_enchantee table {
     font-size: 15px;
   }
 }
 
-.la_note_enchantée .titre_bas {
+.la_note_enchantee .titre_bas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,13 +690,12 @@ body .contenu .carte table .prix {
           align-items: center;
 }
 
-.la_note_enchantée .titre_bas h4 {
+.la_note_enchantee .titre_bas h5 {
   margin-left: 10px;
 }
 
 .la_palette_du_gout {
   font-family: 'Kaushan';
-  border: 1px solid #fdfffd;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   background-color: #fdfffd;
@@ -711,11 +708,11 @@ body .contenu .carte table .prix {
   padding-top: 40px;
 }
 
-.la_palette_du_gout h1 {
+.la_palette_du_gout h2 {
   font-size: 28px;
 }
 
-.la_palette_du_gout h2 {
+.la_palette_du_gout h3 {
   font-size: 40px;
   font-weight: normal;
   background-image: linear-gradient(135deg, #3e9642, #70bf5d, #c1fb94);
@@ -727,17 +724,17 @@ body .contenu .carte table .prix {
 }
 
 @media (max-width: 599px) {
-  .la_palette_du_gout h2 {
+  .la_palette_du_gout h3 {
     font-size: 32px;
   }
 }
 
-.la_palette_du_gout .partie h3 {
+.la_palette_du_gout .partie h4 {
   font-size: 30px;
 }
 
 @media (max-width: 599px) {
-  .la_palette_du_gout .partie h3 {
+  .la_palette_du_gout .partie h4 {
     font-size: 22px;
   }
 }
@@ -758,7 +755,6 @@ body .contenu .carte table .prix {
 
 .le_chic_a_la_francaise {
   font-size: 18px;
-  border: 1px solid #fff5fe;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   background-color: #fff5fe;
@@ -771,7 +767,7 @@ body .contenu .carte table .prix {
   padding-top: 40px;
 }
 
-.le_chic_a_la_francaise h2 {
+.le_chic_a_la_francaise h3 {
   font-size: 35px;
   font-family: 'CroissantOne';
   background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
@@ -782,7 +778,7 @@ body .contenu .carte table .prix {
   text-fill-color: transparent;
 }
 
-.le_chic_a_la_francaise h3 {
+.le_chic_a_la_francaise h4 {
   font-size: 20px;
   font-family: 'CroissantOne';
 }
@@ -810,7 +806,6 @@ body .contenu .carte table .prix {
 .le_delice_des_papilles {
   font-family: 'Dancing';
   font-size: 18px;
-  border: 1px solid #f9f9f9;
   -webkit-box-shadow: 1px 1px 2px grey;
           box-shadow: 1px 1px 2px grey;
   background-color: #f9f9f9;
@@ -823,7 +818,7 @@ body .contenu .carte table .prix {
   padding-top: 40px;
 }
 
-.le_delice_des_papilles h2 {
+.le_delice_des_papilles h3 {
   font-size: 42px;
   background-image: linear-gradient(135deg, #0216d9, #0070f0, #189df6);
   -webkit-background-clip: text;
@@ -834,14 +829,14 @@ body .contenu .carte table .prix {
 }
 
 @media (max-width: 599px) {
-  .le_delice_des_papilles h2 {
+  .le_delice_des_papilles h3 {
     font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.le_delice_des_papilles .partie h3 {
+.le_delice_des_papilles .partie h4 {
   font-size: 22px;
 }
 

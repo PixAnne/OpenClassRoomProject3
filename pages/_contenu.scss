@@ -1,17 +1,16 @@
-body {
-
-    h1 {
-        text-align: center;
-        font-size: 25px;
-        font-family: 'Playtime';
-    }
-    
+body {    
     .contenu {
         display: flex;
         flex-direction: column;
         flex: 1;
         background-color: white;
         min-height: 500px;
+        
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Playtime';
+        }
 
         .menus {
             flex: 1;
@@ -61,7 +60,11 @@ body {
 
                     .note {
                         font-family: 'Devonshire';
-                        @include backgroundBorderAndShadow($color-background-note);
+                        @include backgroundAndShadow($color-background-note);
+
+                        .logoNote {
+                            width: 25%;
+                        }
                     
                         h2 {
                             color: black;
@@ -80,7 +83,7 @@ body {
                     }
                     .chic {
                         font-family: 'CroissantOne';
-                        @include backgroundBorderAndShadow($color-background-chic);
+                        @include backgroundAndShadow($color-background-chic);
                         
                         h2 {
                             font-size: 15px;
@@ -94,7 +97,7 @@ body {
                     }
                     .delice {
                         font-family: 'Dancing';
-                        @include backgroundBorderAndShadow($color-background-delice);
+                        @include backgroundAndShadow($color-background-delice);
 
                         h2 {
                             @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
@@ -106,7 +109,7 @@ body {
                     }
                     .palette {
                         font-family: 'Kaushan';
-                        @include backgroundBorderAndShadow($color-background-palette);
+                        @include backgroundAndShadow($color-background-palette);
 
                         h2 {
                             @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
@@ -138,11 +141,11 @@ body {
                         transform: scaleX(-1);
                     }
 
-                    h3 {
+                    h4 {
                         position: relative;
                     }
 
-                    h3:before {
+                    h4:before {
                         content: "";
                         position: absolute;
                         width: 0%;
@@ -153,7 +156,7 @@ body {
                         transition: width 0.3s ease-in-out;
                     }
                     
-                    h3:hover:before {
+                    h4:hover:before {
                         width: 100%;
                     }
                 }
@@ -174,6 +177,42 @@ body {
                     @media (max-width: 599px) {
                         width: 30%;
                     }
+                }
+            }
+        }
+        .prochainement {
+            color: $color-title;
+            background-color: $color-background-title;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 2px 6px;
+            width: 300px;
+            align-self: center;
+            width: 200px;
+            font-size: 12px;
+            font-family: sans-serif;
+            
+            h2 {
+                margin-top: 4px;
+                margin-bottom: 4px;
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+                
+                .point {
+                    animation-name: blink;
+                    animation-duration: 1.4s;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: both;
+                }
+                
+                .point:nth-child(2) {
+                    animation-delay: .2s;
+                }
+                
+                .point:nth-child(3) {
+                    animation-delay: .4s;
                 }
             }
         }

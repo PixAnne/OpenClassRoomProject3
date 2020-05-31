@@ -742,6 +742,10 @@ body .contenu .carte table .prix {
   }
 }
 
+.la_palette_du_gout .partie svg {
+  fill: url(#paletteGradient);
+}
+
 .la_palette_du_gout table {
   font-size: 20px;
 }
@@ -839,6 +843,10 @@ body .contenu .carte table .prix {
 
 .le_delice_des_papilles .partie h3 {
   font-size: 22px;
+}
+
+.le_delice_des_papilles .partie svg {
+  fill: url(#deliceGradient);
 }
 
 .le_delice_des_papilles table {

@@ -22,6 +22,10 @@
                 font-size: 22px;
             }
         }
+
+        svg {
+            fill: url(#paletteGradient)
+        }
     }
     
     table {

@@ -250,7 +250,13 @@ body .contenu {
       -ms-flex: 1;
           flex: 1;
   background-color: white;
-  min-height: 500px;
+  min-height: 1000px;
+}
+
+@media (max-width: 599px) {
+  body .contenu {
+    min-height: 600px;
+  }
 }
 
 body .contenu h2 {
@@ -293,6 +299,14 @@ body .contenu .menus > div .conteneur_menu {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
+  min-height: 400px;
+  max-width: 300px;
+}
+
+@media (max-width: 599px) {
+  body .contenu .menus > div .conteneur_menu {
+    min-height: 200px;
+  }
 }
 
 body .contenu .menus > div .conteneur_menu a {

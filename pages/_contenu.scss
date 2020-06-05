@@ -3,11 +3,13 @@ body {
         display: flex;
         flex-direction: column;
         flex: 1;
+        align-items: center;
         background-color: white;
-        min-height: 1000px;
+        min-height: 1200px;
         @media (max-width: 599px) {
             min-height: 600px;
         }
+        overflow: hidden;
         
         h2 {
             text-align: center;
@@ -24,15 +26,20 @@ body {
                 display: flex;
                 flex: 1 1 0;
                 flex-direction: row;
+                @media (max-width: 599px) {
+                    flex: 1;
+                    flex-direction: column;
+                }
 
                 .conteneur_menu {
                     padding: 20px;
                     display: flex;
                     flex: 1 1 0;
-                    min-height: 400px;
-                    max-width: 300px;
+                    min-height: 500px;
+                    max-width: 400px;
+                    min-width: 300px;
                     @media (max-width: 599px) {
-                        min-height: 200px;
+                        min-height: 500px;
                     }
                     
                     a {
@@ -76,16 +83,16 @@ body {
                     
                         h2 {
                             color: black;
-                            font-size: 20px;
+                            font-size: 30px;
                             @media (max-width: 599px) {
-                                font-size: 16px;
+                                font-size: 30px;
                             }
                         }
                         h3 {
                             color: black;
                             font-size: 35px;
                             @media (max-width: 599px) {
-                                font-size: 15px;
+                                font-size: 25px;
                             }
                         }
                     }
@@ -94,13 +101,14 @@ body {
                         @include backgroundAndShadow($color-background-chic);
                         
                         h2 {
-                            font-size: 15px;
+                            font-size: 25px;
 
                             @include gradientColor(135deg, $colorEntreesChic, $colorPlatsChic, $colorDessertsChic);
                         }
 
                         h3 {
                             color: $colorEntreesChic;
+                            font-size: 20px;
                         }
                     }
                     .delice {
@@ -109,10 +117,14 @@ body {
 
                         h2 {
                             @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
+                            @media (max-width: 599px) {
+                                font-size: 25px;
+                            }
                         }
 
                         h3 {
                             color: $colorPlatsDelice;
+                            font-size: 30px;
                         }
                     }
                     .palette {
@@ -121,15 +133,39 @@ body {
 
                         h2 {
                             @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
+                            @media (max-width: 599px) {
+                                font-size: 30px;
+                            }
                         }
 
                         h3 {
                             color: $colorPalette2;
+                            font-size: 30px;
                         }
                     }
                 }
             }
         }
+
+        /*  AIDE MEMOIRE STRUCTURE
+            .contenu
+                h2
+                .carte
+                    h3
+                    .entrees
+                        .partie
+                            svg
+                            h4
+                            svg
+                        .carte
+                            .plat_prix
+                                .plat
+                                .prix
+                    .plats
+                        (Meme que dans .entrees)
+                    .desserts
+                        (Meme que dans .entrees)
+        */
 
         .carte {
             padding-bottom: 50px;
@@ -170,20 +206,27 @@ body {
                 }
             }        
 
-            table {
+            .carte {
                 width: 85%;
-                .plat {
-                    text-align: left;
-                    padding-bottom: 5px;
-                    padding-top: 10px;
-                }
-                
-                .prix {
-                    text-align: right;
-                    padding-bottom: 5px;
-                    padding-top: 10px;
-                    @media (max-width: 599px) {
-                        width: 30%;
+                .plat_prix {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .plat {
+                        text-align: left;
+                        margin-bottom: 5px;
+                        margin-top: 10px;
+                    }
+                    
+                    .prix {
+                        flex-shrink: 0;
+                        text-align: right;
+                        margin-bottom: 5px;
+                        margin-top: 10px;
+                        @media (max-width: 599px) {
+                            width: 30%;
+                        }
                     }
                 }
             }

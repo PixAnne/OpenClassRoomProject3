@@ -189,6 +189,7 @@ body header a h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 599px) {
@@ -234,7 +235,7 @@ footer a:hover {
 
 @media (max-width: 599px) {
   footer a {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -249,8 +250,31 @@ body .contenu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
-  min-height: 1000px;
+  min-height: 1200px;
+  overflow: hidden;
+  /*  AIDE MEMOIRE STRUCTURE
+            .contenu
+                h2
+                .carte
+                    h3
+                    .entrees
+                        .partie
+                            svg
+                            h4
+                            svg
+                        .carte
+                            .plat_prix
+                                .plat
+                                .prix
+                    .plats
+                        (Meme que dans .entrees)
+                    .desserts
+                        (Meme que dans .entrees)
+        */
 }
 
 @media (max-width: 599px) {
@@ -291,6 +315,18 @@ body .contenu .menus > div {
           flex-direction: row;
 }
 
+@media (max-width: 599px) {
+  body .contenu .menus > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body .contenu .menus > div .conteneur_menu {
   padding: 20px;
   display: -webkit-box;
@@ -299,13 +335,14 @@ body .contenu .menus > div .conteneur_menu {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
-  min-height: 400px;
-  max-width: 300px;
+  min-height: 500px;
+  max-width: 400px;
+  min-width: 300px;
 }
 
 @media (max-width: 599px) {
   body .contenu .menus > div .conteneur_menu {
-    min-height: 200px;
+    min-height: 500px;
   }
 }
 
@@ -380,12 +417,12 @@ body .contenu .menus > div .conteneur_menu .note .logoNote {
 
 body .contenu .menus > div .conteneur_menu .note h2 {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media (max-width: 599px) {
   body .contenu .menus > div .conteneur_menu .note h2 {
-    font-size: 16px;
+    font-size: 30px;
   }
 }
 
@@ -396,7 +433,7 @@ body .contenu .menus > div .conteneur_menu .note h3 {
 
 @media (max-width: 599px) {
   body .contenu .menus > div .conteneur_menu .note h3 {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
@@ -408,7 +445,7 @@ body .contenu .menus > div .conteneur_menu .chic {
 }
 
 body .contenu .menus > div .conteneur_menu .chic h2 {
-  font-size: 15px;
+  font-size: 25px;
   background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -419,6 +456,7 @@ body .contenu .menus > div .conteneur_menu .chic h2 {
 
 body .contenu .menus > div .conteneur_menu .chic h3 {
   color: #c7741d;
+  font-size: 20px;
 }
 
 body .contenu .menus > div .conteneur_menu .delice {
@@ -437,8 +475,15 @@ body .contenu .menus > div .conteneur_menu .delice h2 {
   text-fill-color: transparent;
 }
 
+@media (max-width: 599px) {
+  body .contenu .menus > div .conteneur_menu .delice h2 {
+    font-size: 25px;
+  }
+}
+
 body .contenu .menus > div .conteneur_menu .delice h3 {
   color: #0070f0;
+  font-size: 30px;
 }
 
 body .contenu .menus > div .conteneur_menu .palette {
@@ -457,8 +502,15 @@ body .contenu .menus > div .conteneur_menu .palette h2 {
   text-fill-color: transparent;
 }
 
+@media (max-width: 599px) {
+  body .contenu .menus > div .conteneur_menu .palette h2 {
+    font-size: 30px;
+  }
+}
+
 body .contenu .menus > div .conteneur_menu .palette h3 {
   color: #70bf5d;
+  font-size: 30px;
 }
 
 body .contenu .carte {
@@ -517,24 +569,39 @@ body .contenu .carte section .partie h4:hover:before {
   width: 100%;
 }
 
-body .contenu .carte table {
+body .contenu .carte .carte {
   width: 85%;
 }
 
-body .contenu .carte table .plat {
-  text-align: left;
-  padding-bottom: 5px;
-  padding-top: 10px;
+body .contenu .carte .carte .plat_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body .contenu .carte table .prix {
+body .contenu .carte .carte .plat_prix .plat {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+body .contenu .carte .carte .plat_prix .prix {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   text-align: right;
-  padding-bottom: 5px;
-  padding-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 @media (max-width: 599px) {
-  body .contenu .carte table .prix {
+  body .contenu .carte .carte .plat_prix .prix {
     width: 30%;
   }
 }
@@ -674,6 +741,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 .la_note_enchantee h4 {
   font-size: 30px;
   font-family: 'Devonshire';
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media (max-width: 599px) {
@@ -706,6 +775,25 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_note_enchantee .titre_bas h5 {
   margin-left: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 599px) {
+  .la_note_enchantee .titre_bas h5 {
+    font-size: 20px;
+  }
+}
+
+.la_note_enchantee .titre_bas img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 599px) {
+  .la_note_enchantee .titre_bas img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .la_palette_du_gout {
@@ -745,6 +833,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_palette_du_gout .partie h4 {
   font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media (max-width: 599px) {
@@ -795,6 +885,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 .le_chic_a_la_francaise h4 {
   font-size: 20px;
   font-family: 'CroissantOne';
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .le_chic_a_la_francaise svg {
@@ -813,7 +905,7 @@ body .contenu .prochainement h2 .point:nth-child(3) {
   color: #6e4cc9;
 }
 
-.le_chic_a_la_francaise table {
+.le_chic_a_la_francaise .carte {
   font-size: 15px;
 }
 
@@ -852,6 +944,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .le_delice_des_papilles .partie h4 {
   font-size: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .le_delice_des_papilles .partie svg {

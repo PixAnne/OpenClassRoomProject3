@@ -1,6 +1,7 @@
 .le_chic_a_la_francaise {
-    font-size: 18px;
+    font-size: 20px;
     @include ProprietesCommunesPage($color-background-chic);
+
     
     h3 {
         font-size: 35px;
@@ -32,6 +33,6 @@
     }
     
     .carte {
-        font-size: 15px;
+        font-size: 20px;
     }
 }

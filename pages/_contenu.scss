@@ -6,7 +6,7 @@ body {
         align-items: center;
         background-color: white;
         min-height: 1200px;
-        @media (max-width: 599px) {
+        @media (max-width: 699px) {
             min-height: 600px;
         }
         overflow: hidden;
@@ -26,7 +26,7 @@ body {
                 display: flex;
                 flex: 1 1 0;
                 flex-direction: row;
-                @media (max-width: 599px) {
+                @media (max-width: 699px) {
                     flex: 1;
                     flex-direction: column;
                 }
@@ -39,8 +39,9 @@ body {
                     min-height: 500px;
                     max-width: 400px;
                     min-width: 300px;
-                    @media (max-width: 599px) {
+                    @media (max-width: 699px) {
                         min-height: 500px;
+                        margin: 10px;
                     }
                     
                     a {
@@ -56,7 +57,7 @@ body {
                             padding-right: 8px;
                             padding-left: 8px;
                             margin: 0;
-                            @media (max-width: 599px) {
+                            @media (max-width: 699px) {
                                 font-size: 15px;
                             }
                         }
@@ -89,14 +90,14 @@ body {
                         h2 {
                             color: black;
                             font-size: 30px;
-                            @media (max-width: 599px) {
+                            @media (max-width: 699px) {
                                 font-size: 30px;
                             }
                         }
                         h3 {
                             color: black;
                             font-size: 35px;
-                            @media (max-width: 599px) {
+                            @media (max-width: 699px) {
                                 font-size: 25px;
                             }
                         }
@@ -122,7 +123,7 @@ body {
 
                         h2 {
                             @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
-                            @media (max-width: 599px) {
+                            @media (max-width: 699px) {
                                 font-size: 25px;
                             }
                         }
@@ -138,7 +139,7 @@ body {
 
                         h2 {
                             @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
-                            @media (max-width: 599px) {
+                            @media (max-width: 699px) {
                                 font-size: 30px;
                             }
                         }
@@ -229,7 +230,7 @@ body {
                         text-align: right;
                         margin-bottom: 5px;
                         margin-top: 10px;
-                        @media (max-width: 599px) {
+                        @media (max-width: 699px) {
                             width: 30%;
                         }
                     }
@@ -249,6 +250,9 @@ body {
             width: 200px;
             font-size: 12px;
             font-family: sans-serif;
+            @media (max-width: 699px) {
+                margin-top: 10px;
+            }
             
             h2 {
                 margin: 5px;

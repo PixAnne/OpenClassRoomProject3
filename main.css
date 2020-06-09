@@ -277,7 +277,7 @@ body .contenu {
         */
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu {
     min-height: 600px;
   }
@@ -315,7 +315,7 @@ body .contenu .menus > div {
           flex-direction: row;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -341,9 +341,10 @@ body .contenu .menus > div .conteneur_menu {
   min-width: 300px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu {
     min-height: 500px;
+    margin: 10px;
   }
 }
 
@@ -374,7 +375,7 @@ body .contenu .menus > div .conteneur_menu a h2, body .contenu .menus > div .con
   margin: 0;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu a h2, body .contenu .menus > div .conteneur_menu a h3 {
     font-size: 15px;
   }
@@ -425,7 +426,7 @@ body .contenu .menus > div .conteneur_menu .note h2 {
   font-size: 30px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .note h2 {
     font-size: 30px;
   }
@@ -436,7 +437,7 @@ body .contenu .menus > div .conteneur_menu .note h3 {
   font-size: 35px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .note h3 {
     font-size: 25px;
   }
@@ -480,7 +481,7 @@ body .contenu .menus > div .conteneur_menu .delice h2 {
   text-fill-color: transparent;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .delice h2 {
     font-size: 25px;
   }
@@ -507,7 +508,7 @@ body .contenu .menus > div .conteneur_menu .palette h2 {
   text-fill-color: transparent;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .palette h2 {
     font-size: 30px;
   }
@@ -605,7 +606,7 @@ body .contenu .carte .carte .plat_prix .prix {
   margin-top: 10px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   body .contenu .carte .carte .plat_prix .prix {
     width: 30%;
   }
@@ -626,6 +627,12 @@ body .contenu .prochainement {
   width: 200px;
   font-size: 12px;
   font-family: sans-serif;
+}
+
+@media (max-width: 699px) {
+  body .contenu .prochainement {
+    margin-top: 10px;
+  }
 }
 
 body .contenu .prochainement h2 {

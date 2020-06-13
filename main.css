@@ -412,8 +412,8 @@ body .contenu .menus > div .conteneur_menu a .zoom h2 {
 body .contenu .menus > div .conteneur_menu .note {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
-  -webkit-box-shadow: 3px 3px 4px grey;
-          box-shadow: 3px 3px 4px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
 }
 
 body .contenu .menus > div .conteneur_menu .note .logoNote {
@@ -445,8 +445,8 @@ body .contenu .menus > div .conteneur_menu .note h3 {
 body .contenu .menus > div .conteneur_menu .chic {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
-  -webkit-box-shadow: 3px 3px 4px grey;
-          box-shadow: 3px 3px 4px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
 }
 
 body .contenu .menus > div .conteneur_menu .chic h2 {
@@ -467,8 +467,8 @@ body .contenu .menus > div .conteneur_menu .chic h3 {
 body .contenu .menus > div .conteneur_menu .delice {
   font-family: 'Dancing';
   background-color: #f9f9f9;
-  -webkit-box-shadow: 3px 3px 4px grey;
-          box-shadow: 3px 3px 4px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
 }
 
 body .contenu .menus > div .conteneur_menu .delice h2 {
@@ -494,8 +494,8 @@ body .contenu .menus > div .conteneur_menu .delice h3 {
 body .contenu .menus > div .conteneur_menu .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
-  -webkit-box-shadow: 3px 3px 4px grey;
-          box-shadow: 3px 3px 4px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
 }
 
 body .contenu .menus > div .conteneur_menu .palette h2 {

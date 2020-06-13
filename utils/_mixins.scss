@@ -1,7 +1,7 @@
 /* Menus du contenu */
 @mixin backgroundAndShadow($backgroundColor) {
 	background-color: $backgroundColor;   
-    box-shadow: 3px 3px 4px grey;
+    box-shadow: 3px 4px 5px rgb(240, 238, 240);
 }
 
 @mixin ProprietesCommunesPage($backgroundColor) {

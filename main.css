@@ -723,8 +723,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_note_enchantee {
   font-family: 'Nickainley';
-  -webkit-box-shadow: 1px 1px 2px grey;
-          box-shadow: 1px 1px 2px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
   background-color: #fcdfdb;
   width: 85%;
   text-align: center;
@@ -807,8 +807,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_palette_du_gout {
   font-family: 'Kaushan';
-  -webkit-box-shadow: 1px 1px 2px grey;
-          box-shadow: 1px 1px 2px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
   background-color: #fdfffd;
   width: 85%;
   text-align: center;
@@ -868,8 +868,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .le_chic_a_la_francaise {
   font-size: 20px;
-  -webkit-box-shadow: 1px 1px 2px grey;
-          box-shadow: 1px 1px 2px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
   background-color: #fff5fe;
   width: 85%;
   text-align: center;
@@ -921,8 +921,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 .le_delice_des_papilles {
   font-family: 'Dancing';
   font-size: 18px;
-  -webkit-box-shadow: 1px 1px 2px grey;
-          box-shadow: 1px 1px 2px grey;
+  -webkit-box-shadow: 3px 4px 5px #f0eef0;
+          box-shadow: 3px 4px 5px #f0eef0;
   background-color: #f9f9f9;
   width: 85%;
   text-align: center;

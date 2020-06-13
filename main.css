@@ -285,8 +285,9 @@ body .contenu {
 
 body .contenu h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Playtime';
+  margin-bottom: 8px;
 }
 
 body .contenu .menus {

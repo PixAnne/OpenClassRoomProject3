@@ -285,7 +285,7 @@ body .contenu {
 
 body .contenu h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.9em;
   font-family: 'Playtime';
   margin-bottom: 8px;
 }
@@ -377,7 +377,7 @@ body .contenu .menus > div .conteneur_menu a h2, body .contenu .menus > div .con
 
 @media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu a h2, body .contenu .menus > div .conteneur_menu a h3 {
-    font-size: 15px;
+    font-size: 1em;
   }
 }
 
@@ -413,8 +413,8 @@ body .contenu .menus > div .conteneur_menu a .zoom h2 {
 body .contenu .menus > div .conteneur_menu .note {
   font-family: 'Devonshire';
   background-color: #fcdfdb;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
 }
 
 body .contenu .menus > div .conteneur_menu .note .logoNote {
@@ -423,35 +423,35 @@ body .contenu .menus > div .conteneur_menu .note .logoNote {
 
 body .contenu .menus > div .conteneur_menu .note h2 {
   color: black;
-  font-size: 30px;
+  font-size: 1.85em;
 }
 
 @media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .note h2 {
-    font-size: 30px;
+    font-size: 1.85em;
   }
 }
 
 body .contenu .menus > div .conteneur_menu .note h3 {
   color: black;
-  font-size: 35px;
+  font-size: 3em;
 }
 
 @media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .note h3 {
-    font-size: 25px;
+    font-size: 2.5em;
   }
 }
 
 body .contenu .menus > div .conteneur_menu .chic {
   font-family: 'CroissantOne';
   background-color: #fff5fe;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
 }
 
 body .contenu .menus > div .conteneur_menu .chic h2 {
-  font-size: 25px;
+  font-size: 1.55em;
   background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -462,14 +462,14 @@ body .contenu .menus > div .conteneur_menu .chic h2 {
 
 body .contenu .menus > div .conteneur_menu .chic h3 {
   color: #c7741d;
-  font-size: 26px;
+  font-size: 2em;
 }
 
 body .contenu .menus > div .conteneur_menu .delice {
   font-family: 'Dancing';
   background-color: #f9f9f9;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
 }
 
 body .contenu .menus > div .conteneur_menu .delice h2 {
@@ -483,20 +483,20 @@ body .contenu .menus > div .conteneur_menu .delice h2 {
 
 @media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .delice h2 {
-    font-size: 25px;
+    font-size: 1.55em;
   }
 }
 
 body .contenu .menus > div .conteneur_menu .delice h3 {
   color: #0070f0;
-  font-size: 30px;
+  font-size: 2.7em;
 }
 
 body .contenu .menus > div .conteneur_menu .palette {
   font-family: 'Kaushan';
   background-color: #fdfffd;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
 }
 
 body .contenu .menus > div .conteneur_menu .palette h2 {
@@ -510,13 +510,13 @@ body .contenu .menus > div .conteneur_menu .palette h2 {
 
 @media (max-width: 699px) {
   body .contenu .menus > div .conteneur_menu .palette h2 {
-    font-size: 30px;
+    font-size: 1.85em;
   }
 }
 
 body .contenu .menus > div .conteneur_menu .palette h3 {
   color: #70bf5d;
-  font-size: 30px;
+  font-size: 2.2em;
 }
 
 body .contenu .carte {
@@ -534,6 +534,8 @@ body .contenu .carte section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 body .contenu .carte section .partie {
@@ -547,6 +549,7 @@ body .contenu .carte section .partie {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80%;
+  margin-bottom: 0;
 }
 
 body .contenu .carte section .partie .vertical-mirror {
@@ -590,6 +593,8 @@ body .contenu .carte .carte .plat_prix {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 body .contenu .carte .carte .plat_prix .plat {
@@ -625,7 +630,7 @@ body .contenu .prochainement {
       -ms-grid-row-align: center;
       align-self: center;
   width: 200px;
-  font-size: 12px;
+  font-size: 0.75em;
   font-family: sans-serif;
 }
 
@@ -663,12 +668,12 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .mentions_legales {
   padding: 40px;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 @media (max-width: 599px) {
   .mentions_legales {
-    font-size: 13px;
+    font-size: 0.8em;
     text-align: justify;
   }
 }
@@ -678,20 +683,20 @@ body .contenu .prochainement h2 .point:nth-child(3) {
   color: #559c88;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5em;
   margin-bottom: 5px;
   margin-top: 0;
 }
 
 @media (max-width: 599px) {
   .mentions_legales h2 {
-    font-size: 30px;
+    font-size: 1.85em;
   }
 }
 
 .mentions_legales h3 {
   text-align: center;
-  font-size: 15px;
+  font-size: 1em;
   font-style: italic;
   color: #559c88;
   margin-bottom: 50px;
@@ -704,13 +709,13 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .mentions_legales h4 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 @media (max-width: 599px) {
   .mentions_legales h4 {
     text-align: center;
-    font-size: 17px;
+    font-size: 1em;
   }
 }
 
@@ -724,8 +729,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_note_enchantee {
   font-family: 'Nickainley';
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
   background-color: #fcdfdb;
   width: 85%;
   text-align: center;
@@ -737,37 +742,40 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .la_note_enchantee h3 {
-  font-size: 40px;
+  margin: 0 0 40px 0;
+  font-size: 2.5em;
   font-weight: normal;
   font-family: 'Devonshire';
 }
 
 @media (max-width: 599px) {
   .la_note_enchantee h3 {
-    font-size: 32px;
+    font-size: 2em;
   }
 }
 
 .la_note_enchantee h4 {
-  font-size: 30px;
+  font-size: 1.85em;
   font-family: 'Devonshire';
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 599px) {
   .la_note_enchantee h4 {
-    font-size: 25px;
+    font-size: 1.55em;
   }
 }
 
 .la_note_enchantee .carte {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 @media (max-width: 599px) {
   .la_note_enchantee .carte {
-    font-size: 15px;
+    font-size: 1em;
   }
 }
 
@@ -785,12 +793,14 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_note_enchantee .titre_bas h5 {
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 1.85em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 599px) {
   .la_note_enchantee .titre_bas h5 {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }
 
@@ -808,8 +818,8 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 .la_palette_du_gout {
   font-family: 'Kaushan';
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
   background-color: #fdfffd;
   width: 85%;
   text-align: center;
@@ -821,11 +831,11 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .la_palette_du_gout h2 {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 .la_palette_du_gout h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: normal;
   background-image: linear-gradient(135deg, #3e9642, #70bf5d, #c1fb94);
   -webkit-background-clip: text;
@@ -837,19 +847,19 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 @media (max-width: 599px) {
   .la_palette_du_gout h3 {
-    font-size: 32px;
+    font-size: 2em;
   }
 }
 
 .la_palette_du_gout .partie h4 {
-  font-size: 30px;
+  font-size: 1.85em;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 @media (max-width: 599px) {
   .la_palette_du_gout .partie h4 {
-    font-size: 22px;
+    font-size: 1.35em;
   }
 }
 
@@ -858,19 +868,19 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .la_palette_du_gout .carte {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 @media (max-width: 599px) {
   .la_palette_du_gout .carte {
-    font-size: 16px;
+    font-size: 1em;
   }
 }
 
 .le_chic_a_la_francaise {
-  font-size: 20px;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  font-size: 1.25em;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
   background-color: #fff5fe;
   width: 85%;
   text-align: center;
@@ -882,7 +892,7 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .le_chic_a_la_francaise h3 {
-  font-size: 35px;
+  font-size: 2.2em;
   font-family: 'CroissantOne';
   background-image: linear-gradient(135deg, #c7741d, #a66798, #6e4cc9);
   -webkit-background-clip: text;
@@ -893,7 +903,7 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .le_chic_a_la_francaise h4 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: 'CroissantOne';
   margin-left: 15px;
   margin-right: 15px;
@@ -915,15 +925,20 @@ body .contenu .prochainement h2 .point:nth-child(3) {
   color: #6e4cc9;
 }
 
+.le_chic_a_la_francaise .desserts .plat {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 .le_chic_a_la_francaise .carte {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 .le_delice_des_papilles {
   font-family: 'Dancing';
-  font-size: 18px;
-  -webkit-box-shadow: 3px 4px 5px #f0eef0;
-          box-shadow: 3px 4px 5px #f0eef0;
+  font-size: 1.125em;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
   background-color: #f9f9f9;
   width: 85%;
   text-align: center;
@@ -935,7 +950,7 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .le_delice_des_papilles h3 {
-  font-size: 42px;
+  font-size: 2.6em;
   background-image: linear-gradient(135deg, #0216d9, #0070f0, #189df6);
   -webkit-background-clip: text;
   background-clip: text;
@@ -946,14 +961,14 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 
 @media (max-width: 599px) {
   .le_delice_des_papilles h3 {
-    font-size: 30px;
+    font-size: 1.85em;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 .le_delice_des_papilles .partie h4 {
-  font-size: 22px;
+  font-size: 1.35em;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -963,12 +978,12 @@ body .contenu .prochainement h2 .point:nth-child(3) {
 }
 
 .le_delice_des_papilles .carte {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 @media (max-width: 599px) {
   .le_delice_des_papilles .carte {
-    font-size: 16px;
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

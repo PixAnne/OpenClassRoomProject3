@@ -1,8 +1,8 @@
 .mentions_legales {
     padding: 40px;
-    font-size: 15px;
+    font-size: 1em;
     @media (max-width: 599px) {
-        font-size: 13px;
+        font-size: 0.8em;
         text-align: justify;
     }
     h2 {
@@ -10,16 +10,16 @@
         color: $color-background-title;
         text-decoration: underline;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 2.5em;
         margin-bottom: 5px;
         margin-top: 0;
         @media (max-width: 599px) {
-            font-size: 30px;
+            font-size: 1.85em;
         }
     }
     h3 {
         text-align: center;
-        font-size: 15px;
+        font-size: 1em;
         font-style: italic;
         color: $color-background-title;
         margin-bottom: 50px;
@@ -28,10 +28,10 @@
         }
     }
     h4 {
-        font-size: 20px;
+        font-size: 1.25em;
         @media (max-width: 599px) {
             text-align: center;
-            font-size: 17px;
+            font-size: 1em;
         }
     }
     .article {

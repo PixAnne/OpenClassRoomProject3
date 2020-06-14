@@ -1,13 +1,13 @@
 .le_delice_des_papilles {
     font-family: 'Dancing';
-    font-size: 18px;
+    font-size: 1.125em;
     @include ProprietesCommunesPage($color-background-delice);
     
     h3 {
-        font-size: 42px;
+        font-size: 2.6em;
         @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
         @media (max-width: 599px) {
-            font-size: 30px;
+            font-size: 1.85em;
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -15,7 +15,7 @@
 
     .partie {    
         h4 {
-            font-size: 22px;
+            font-size: 1.35em;
             margin-left: 15px;
             margin-right: 15px;
         }
@@ -26,9 +26,9 @@
     }
 
     .carte {
-        font-size: 20px;
+        font-size: 1.25em;
         @media (max-width: 599px) {
-            font-size: 16px;
+            font-size: 1em;
         }
     }
 }

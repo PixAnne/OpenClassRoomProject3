@@ -1,11 +1,11 @@
 /* Menus du contenu */
 @mixin backgroundAndShadow($backgroundColor) {
 	background-color: $backgroundColor;   
-    box-shadow: 3px 4px 5px rgb(240, 238, 240);
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
 }
 
 @mixin ProprietesCommunesPage($backgroundColor) {
-    box-shadow: 3px 4px 5px rgb(240, 238, 240);
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.12);
     background-color: $backgroundColor;
     width: 85%;
     text-align: center;

@@ -13,7 +13,7 @@ body {
         
         h2 {
             text-align: center;
-            font-size: 30px;
+            font-size: 1.9em;
             font-family: 'Playtime';
             margin-bottom: 8px;
 
@@ -59,7 +59,7 @@ body {
                             padding-left: 8px;
                             margin: 0;
                             @media (max-width: 699px) {
-                                font-size: 15px;
+                                font-size: 1em;
                             }
                         }
                         .zoom {
@@ -90,16 +90,16 @@ body {
                     
                         h2 {
                             color: black;
-                            font-size: 30px;
+                            font-size: 1.85em;
                             @media (max-width: 699px) {
-                                font-size: 30px;
+                                font-size: 1.85em;
                             }
                         }
                         h3 {
                             color: black;
-                            font-size: 35px;
+                            font-size: 3em;
                             @media (max-width: 699px) {
-                                font-size: 25px;
+                                font-size: 2.5em;
                             }
                         }
                     }
@@ -108,14 +108,14 @@ body {
                         @include backgroundAndShadow($color-background-chic);
                         
                         h2 {
-                            font-size: 25px;
+                            font-size: 1.55em;
 
                             @include gradientColor(135deg, $colorEntreesChic, $colorPlatsChic, $colorDessertsChic);
                         }
 
                         h3 {
                             color: $colorEntreesChic;
-                            font-size: 26px;
+                            font-size: 2em;
                         }
                     }
                     .delice {
@@ -125,13 +125,13 @@ body {
                         h2 {
                             @include gradientColor(135deg, $colorEntreesDelice, $colorPlatsDelice, $colorDessertsDelice);
                             @media (max-width: 699px) {
-                                font-size: 25px;
+                                font-size: 1.55em;
                             }
                         }
 
                         h3 {
                             color: $colorPlatsDelice;
-                            font-size: 30px;
+                            font-size: 2.7em;
                         }
                     }
                     .palette {
@@ -141,13 +141,13 @@ body {
                         h2 {
                             @include gradientColor(135deg, $colorPalette1, $colorPalette2, $colorPalette3);
                             @media (max-width: 699px) {
-                                font-size: 30px;
+                                font-size: 1.85em;
                             }
                         }
 
                         h3 {
                             color: $colorPalette2;
-                            font-size: 30px;
+                            font-size: 2.2em;
                         }
                     }
                 }
@@ -181,12 +181,15 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 20px;
+                margin-bottom: 0;
 
                 .partie {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     width: 80%;
+                    margin-bottom: 0;
                 
                     .vertical-mirror {
                         transform: scaleX(-1);
@@ -219,6 +222,8 @@ body {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    margin-left: 20px;
+                    margin-right: 20px;
 
                     .plat {
                         text-align: left;
@@ -249,7 +254,7 @@ body {
             width: 300px;
             align-self: center;
             width: 200px;
-            font-size: 12px;
+            font-size: 0.75em;
             font-family: sans-serif;
             @media (max-width: 699px) {
                 margin-top: 10px;
